@@ -46,4 +46,23 @@ jQuery(document).ready(function($) {
 		
 	});
 	
+	$(document).on('click', '.blogs-pagination .pagination-link', function(){
+		var page_index = $(this).attr('page-index');
+		$.ajax({
+			url: wp_admin_url + '',
+			type: 'post',
+			data:{
+				action: 'get_posts',
+				offset: (page_index - 1) * 8,
+				page: page_index,
+				count: 8,
+			},
+			success: function(response){
+				$('#blogs_content').html(response);
+				$('html, body').animate({
+					scrollTop: $("#blogs_content").offset().top
+				}, 1000);
+			}
+		})
+	})
 }); /* end of as page load scripts */

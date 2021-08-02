@@ -156,6 +156,9 @@
 		margin-bottom: 25px;
 	}
 
+	.blog-item-col-wrap {
+		padding-top: calc(50% - 15px);
+	}
 }
 
 /* Small Devices, Tablets */

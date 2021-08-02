@@ -249,6 +249,35 @@ function my_acf_init() {
 			'keywords'			=> array( 'contact' )
 		));
 		
+		acf_register_block(array(
+			'name'				=> 'simple-hero',
+			'title'				=> __('Simple Hero'),
+			'description'		=> __(''),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'slides',
+			'keywords'			=> array( 'contact' )
+		));
+
+		acf_register_block(array(
+			'name'				=> 'blog-content',
+			'title'				=> __('Blog Content'),
+			'description'		=> __(''),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'slides',
+			'keywords'			=> array( 'contact' )
+		));
+
+		acf_register_block(array(
+			'name'				=> 'blogs',
+			'title'				=> __('Blogs'),
+			'description'		=> __(''),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'slides',
+			'keywords'			=> array( 'contact' )
+		));
 	}
 }
   

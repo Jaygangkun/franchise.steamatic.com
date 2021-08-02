@@ -27,6 +27,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Adobe Fonts Import -->
     <link rel="stylesheet" href="https://use.typekit.net/xum7txi.css">
     
@@ -56,6 +59,9 @@
         </style>
     </noscript>
 
+	<script type="text/javascript">
+		var wp_admin_url = '<?php echo admin_url('admin-ajax.php')?>';
+	</script>
 	</head>
 
 	<body <?php body_class(); ?>>
