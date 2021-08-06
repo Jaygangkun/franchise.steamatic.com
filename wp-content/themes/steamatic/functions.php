@@ -181,20 +181,14 @@ function getPaginationPosts(){
 			$feature_img = get_the_post_thumbnail_url( $post->ID, 'full');
 			?>
 			<div class="<?php echo $col_class?>">
-				<div class="blog-item-col-wrap bk-img" style="background-image:url(<?php echo $feature_img?>)">
-					<div class="blog-item-col-content">
-						<div class="blog-item__title"><?php echo $post->post_title?></div>
-						<div class="blog-item__date">
-							<?php
-							echo date('M jS Y', strtotime($post->post_date));
-							?>
-						</div>
-						<div class="">
-							<a class="link link-blue" href="<?php echo get_permalink($post->ID)?>">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
+					<div class="blog-item-col-wrap bk-img" style="background-image:url(<?php echo $feature_img?>)">
+						<div class="blog-item-col-content">
+							<div class="blog-item__title"><?php echo $post->post_title?></div>
+							<div class="blog-item__date"><?php echo date('M jS Y', strtotime($post->post_date)); ?></div>
+							<a class="btn btn-secondary" href="<?php echo get_permalink($post->ID)?>">Read More</a>
+						</div><!-- end .blog-item-col-content  -->
+					</div><!-- end .blog-item-col-wrap -->
+				</div><!-- end .col-lg-4 -->
 			<?php
 			$post_index++;
 		}

@@ -626,14 +626,11 @@ h2 {
 
 .navbar-fixed.scrolled,
 body.page-id-108 .navbar-fixed,
+body.page-id-538 .navbar-fixed,
+body.single-post .navbar-fixed,
 .page-template-page-sitemap .navbar-fixed {
 	opacity: 1;
 	pointer-events: all;
-}
-
-.navbar-fixed.height,
-body.page-id-108 .navbar-fixed,
-.page-template-page-sitemap .navbar-fixed {
 	height: auto;
 }
 
@@ -1436,7 +1433,8 @@ footer .social a {
 	margin-right: 25px;
 }
 
-footer span {
+footer span,
+footer span a {
 	color: #2B418A;
 	font-weight: 600;
 }
@@ -1496,6 +1494,20 @@ footer span {
 
 .simple-hero .container {
 	position: relative;
+}
+
+.simple-hero .breadcrumbs {
+	text-align: center;
+	display: block;
+	color: #ffffff;
+}
+
+.simple-hero .breadcrumbs a {
+	color: #ffffff;
+}
+
+.simple-hero .breadcrumbs a:hover {
+	text-decoration: none;
 }
 
 .blog-content {
@@ -1589,35 +1601,6 @@ footer span {
 	margin-bottom: 20px;
 }
 
-.link {
-	font-family: proxima-nova;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 17px;
-	line-height: 17px;
-	text-align: center;
-	letter-spacing: 0.095em;
-	text-transform: uppercase;
-
-	display: inline-block;
-	cursor: pointer;
-	padding: 10px 30px;
-	text-decoration: none;
-}
-
-.link:hover{
-	text-decoration: none;
-}
-
-.link-blue {
-	background: #2B418A;
-	color: #FFFFFF;
-}
-
-.link-blue:hover {
-	color: #FFFFFF;
-}
-
 .blog-item-col-wrap {
 	position: relative;
 	width: 100%;
@@ -1682,4 +1665,10 @@ footer span {
 
 .blogs-pagination .pagination{
 	justify-content: center;
+}
+
+.bk-img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
